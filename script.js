@@ -1,4 +1,4 @@
-function submit() {
+   function submit() {
     debugger;
     var fullname = document.getElementById('fullname');
     console.log(fullname.value);
