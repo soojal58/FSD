@@ -3,56 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Tournament Registration Form</title>
-    <link rel="stylesheet" href="activity1.css">
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2> Cricket Registration Form</h2>
-    <label for="fullname">full Name  :</label>
-    <input type="text" id="fullname" placeholder="Enter Your Full Name"><br><br>
+    <h1>Welcome to Vidyavardhaka Polytechnic</h1>
 
-    <label for="phno">phone Number :</label>
-    <input type="text" id="phno" placeholder="Enter Your Mobile Number"><br><br>
 
-    <label for="email">email :</label>
-    <input type="text" id="email" placeholder="Enter Your email"><br><br>
+        <div class="form-container">
+        <div class="form-row">
+        <label for="fullname">Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Fullname" required><br><br>
+        </div>
+        <p class="hidden" id="hiddenname">Enter your Proper Name</p>
+        
 
-    <div id="food">
-        <label for="foodprefer">Food Preference :</label><br>
-        <input type="radio" id="veg" name="food" value="veg">
-        <label for="veg">veg:</label><br>
-        <input type="radio" id="non-veg" name="food" value="non-veg">
-        <label for="non-veg">non-veg:</label><br>
-        <input type="radio" id="vegan" name="food" value="vegan">
-        <label for="vegan">vegan:</label><br>
-        <input type="radio" id="keto" name="food" value="keto">
-        <label for="keto">keto</label><br>
+        <div class="form-row">
+        <label for="Fathername">FatherName:</label>
+        <input type="text" id="Fathername" placeholder="Enter Your Fathername" required><br><br>
+        </div>
+        <p class="hidden" id="hiddenFathername">Enter your Proper FatherName</p>
 
-    </div>
+        <div class="form-row">
+        <label for="Mothername">MotherName:</label>
+        <input type="text" id="Mothername" placeholder="Enter Your Mothername" required><br><br>
+        </div>
+        <p class="hidden" id="hiddenMothername">Enter your Proper MotherName</p>
+        
 
-    <div id="tshirt">
-        <label for="tshirt">Tshirt size:</label><br>
-        <input type="radio" id="s" name="tshirt" value="s">
-        <label for="s">s</label><br>
-        <input type="radio" id="m" name="tshirt" value="m">
-        <label for="m">m</label><br>
-        <input type="radio" id="l" name="tshirt" value="l">
-        <label for="l">l</label><br>
-        <input type="radio" id="xl" name="tshirt" value="xl">
-        <label for="xl">xl</label><br>
-    </div>
+        <div class="form-row">
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter Your Age" required><br><br>
+        </div>
+        <p class="hidden" id="hiddenage">Enter your Proper Age</p>  
+        
 
-    <div id="gender">
-        <label for="gender">Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="femalemale">female</label><br>
-    </div>
-
-    <button onclick="submit()">Submit</button>
+        <div class="form-row">
+        <label for="Dob">Date of Birth:</label>
+        <input type="date" id="Dob" placeholder="Enter Your Date Of Brith" required>
+        </div>
+        <p class="hidden" id="hiddenDob">Enter your Proper Date of Birth</p>
     
-    <script src="activity1.js"></script>
 
+        <div class="form-row">
+        <label for="Gender">Gender:</label>
+        <input type="radio"  id="male" name="Gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio"  id="Female" name="Gender" value="Female">
+        <label for="Female">Female</label>
+        <input type="radio"  id="others" name="Gender" value="others">
+        <label for="others">others</label>
+        </div>
+
+        <div class="form-row">
+        <label for="address">Address:</label>
+        <textarea id="address" placeholder="Enter Your Address" required></textarea><br><br>
+        <p class="hidden" id="hiddenaddress">Enter your Proper Address</p>  
+        </div>
+
+        <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="email" required><br><br>
+        <p class="hidden" id="hiddenemail">Enter your Proper Email</p>  
+        </div>
+
+        <div class="form-row">
+        <label for="phone">Phone:</label>       
+        <input type="tel" id="phone" placeholder="Enter Your Phone Number" required><br><br>
+        <p class="hidden" id="hiddenphone">Enter Valid Phone Number</p>
+        </div><br>
+
+        <div class="form-row">
+        <label for="cource">Choose cource:</label>
+
+    <select name="cource" id="cource">
+    <option value="CS">CS</option>
+    <option value="EC">EC</option>
+    <option value="ME">ME</option>
+    <option value="CE">CE</option>
+    </select><br><br>
+
+        <div>
+        <label for="ITI-percentage">ITI Percentage:</label>
+        <input type="var" id="ITI-percentage" placeholder="Enter Your ITI Percentage" required><br>
+        <p class="hidden" id="hiddenITI">Enter your Proper ITI Percentage</p>
+        </div><br>
+
+        <div>
+        <label for="PUC-percentage">PUC-Percentage:</label>
+        <input type="var" id="PUC-percentage" placeholder="Enter Your PUC Percentage" required><br>
+        <p class="hidden" id="hiddenPUC">Enter your Proper PUC Percentage</p>
+        </div><br>
+
+        <div>
+        <label for="SSLC-percentage">SSLC Percentage:</label>
+        <input type="var" id="SSLC-percentage" placeholder="Enter Your SSLC Percentage" required><br><br>
+        <p class="hidden" id="hiddenSSLC">Enter your Proper SSLC Percentage</p>
+        </div><br>
+
+        <div>
+        <label for="Blood_Group">Blood_Group:</label>
+        <input type="text" id="Blood_Group" placeholder="Enter Your Blood_Group" required>
+        <p class="hidden" id="hiddenBlood_Group">Enter your Proper Blood_Group</p><br><br>
+        </div><br>
+
+
+
+        <button type="submit">Submit</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

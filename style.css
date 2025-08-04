@@ -1,0 +1,9 @@
+.hidden{
+    display: none;
+    color: red;
+}
+body{
+    background-color: #fdba6e;
+    padding: 20px;
+    border-radius: 10px;
+}   
